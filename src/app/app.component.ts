@@ -18,11 +18,16 @@ export class AppComponent {
     {
       title: 'Compra il pane',
       priority: 1
+    },
+    {
+      title: 'Pagare le bollette',
+      priority: 2
     }
   ];
 
   addTodo(todo: Todo){
     this.todos.push(todo);
+    console.log(this.todos);
   }
 
 }
